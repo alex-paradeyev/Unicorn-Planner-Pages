@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — Unicorn Planner</title>
+  <style>
+    :root { --w: 920px; --pad: 20px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; color: #111; background: #fff; }
+    header, main, footer { max-width: var(--w); margin: 0 auto; padding: var(--pad); }
+    header { padding-top: 28px; }
+    .card { border: 1px solid #e7e7e7; border-radius: 14px; padding: 18px; }
+    a { color: inherit; }
+    nav a { margin-right: 14px; text-decoration: none; border-bottom: 1px solid #ddd; }
+    nav a:hover { border-bottom-color: #111; }
+    p { line-height: 1.55; }
+    ul { margin: 8px 0 0 18px; }
+    footer { font-size: 14px; color: #444; padding-bottom: 34px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Support</h1>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        If you need help with Unicorn Planner, email us at:
+        <a href="mailto:support@paradeyev.com">support@paradeyev.com</a>
+      </p>
+
+      <h2>What to include in your message</h2>
+      <ul>
+        <li>Device model and iOS version</li>
+        <li>Unicorn Planner version (Settings → About)</li>
+        <li>What you expected to happen vs. what happened</li>
+        <li>Screenshots (if possible)</li>
+      </ul>
+
+      <h2>Family Controls notes</h2>
+      <p>
+        Family Controls features require Apple’s Screen Time / Family Sharing setup on the device.
+        Parents must approve changes. Availability may vary by region and device configuration.
+      </p>
+
+      <h2>Website</h2>
+      <p>
+        https://alex-paradeyev.github.io/Unicorn-Planner-Pages/
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Alexander Paradeev</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
