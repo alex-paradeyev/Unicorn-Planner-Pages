@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unicorn Planner</title>
+  <meta name="description" content="Unicorn Planner helps families plan tasks and routines with parental controls." />
+  <style>
+    :root { --w: 920px; --pad: 20px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; color: #111; background: #fff; }
+    header, main, footer { max-width: var(--w); margin: 0 auto; padding: var(--pad); }
+    header { padding-top: 28px; }
+    .card { border: 1px solid #e7e7e7; border-radius: 14px; padding: 18px; }
+    .grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
+    @media (min-width: 860px){ .grid { grid-template-columns: 1.2fr 0.8fr; } }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    p { line-height: 1.55; margin: 10px 0; }
+    a { color: inherit; }
+    nav a { margin-right: 14px; text-decoration: none; border-bottom: 1px solid #ddd; }
+    nav a:hover { border-bottom-color: #111; }
+    ul { margin: 8px 0 0 18px; }
+    footer { font-size: 14px; color: #444; padding-bottom: 34px; }
+    .muted { color:#444; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Unicorn Planner</h1>
+    <p class="muted">Family planner with parental controls for healthy routines.</p>
+    <nav>
+      <a href="./support.html">Support</a>
+      <a href="./privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>What the app does</h2>
+      <p>
+        Unicorn Planner helps families plan tasks, routines, and responsibilities. Parents can set up schedules and guide kids
+        through daily goals.
+      </p>
+
+      <h3>Parental controls</h3>
+      <p>
+        Unicorn Planner uses Apple’s Family Controls APIs to let parents manage allowed apps and activity where supported.
+        Parental approval is required for changes.
+      </p>
+
+      <h3>Key features</h3>
+      <ul>
+        <li>Family task planning and routines</li>
+        <li>Kid-friendly views</li>
+        <li>Parental controls via Apple Family Controls</li>
+      </ul>
+    </section>
+
+    <aside class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:support@paradeyev.com">support@paradeyev.com</a></p>
+      <p>Support: <a href="./support.html">support page</a></p>
+      <p>Privacy: <a href="./privacy.html">privacy policy</a></p>
+
+      <hr style="border:none;border-top:1px solid #eee;margin:14px 0;">
+
+      <p class="muted">
+        Website: https://alex-paradeyev.github.io/Unicorn-Planner-Pages/<br/>
+        Developer: Alexander Paradeev
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Alexander Paradeev — Unicorn Planner</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
